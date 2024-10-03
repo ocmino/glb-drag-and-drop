@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
+import { OrbitControls, Sky, useGLTF } from '@react-three/drei';
 import './App.css'; 
 
 const Model = ({ url }) => {
@@ -65,6 +65,7 @@ const App = () => {
         <pointLight position={[10, 10, 10]} />
         */}
         <ambientLight intensity={1} />
+        <Sky sunPosition={[100, 10, 100]} />
         <OrbitControls enableZoom={true} />
         {modelUrl && <Model url={modelUrl} />}
       </Canvas>
