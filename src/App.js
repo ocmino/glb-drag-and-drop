@@ -64,6 +64,7 @@ const App = () => {
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         */}
+        <ambientLight intensity={1} />
         <OrbitControls enableZoom={true} />
         {modelUrl && <Model url={modelUrl} />}
       </Canvas>
