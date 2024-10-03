@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF, Environment } from '@react-three/drei';
+import { OrbitControls, useGLTF } from '@react-three/drei';
 import './App.css'; 
 
 const Model = ({ url }) => {
