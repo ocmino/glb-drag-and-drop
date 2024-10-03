@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Environment } from '@react-three/drei';
-import './App.css'; // Ensure this CSS file exists with the styles below
+import './App.css'; 
 
 const Model = ({ url }) => {
   const { scene } = useGLTF(url);
@@ -55,7 +55,7 @@ const App = () => {
         camera={{ position: [0, 0, 5], fov: 60 }}
         style={{ height: '100vh', width: '100vw' }}
       >
-        {/* Blurred Environment */}
+        {/* Blurred Environment 
         <Environment
           files="https://threejs.org/examples/textures/equirectangular/venice_sunset_1k.hdr"
           backgroundBlurriness={0.5} 
@@ -63,6 +63,7 @@ const App = () => {
         />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
+        */}
         <OrbitControls enableZoom={true} />
         {modelUrl && <Model url={modelUrl} />}
       </Canvas>
